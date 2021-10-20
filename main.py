@@ -111,7 +111,7 @@ async def read_users_me(current_user: User = Depends(get_current_user)):
 
 @app.get("/")
 async def root():
-    return "You are accessing root node, Hello! (not yet authenticated)"
+    return "You are accessing the root node, Hello! Please add /docs to access the Endpoints "
 
 #Get Menu based on ID
 @app.get("/menu/{item_id}")
