@@ -111,7 +111,7 @@ async def read_users_me(current_user: User = Depends(get_current_user)):
 
 @app.get("/")
 async def root(current_user: User = Depends(get_current_user)):
-    return "You are accessing root node, Hello."
+    return "You are accessing root node, Hello!"
 
 #Get Menu based on ID
 @app.get("/menu/{item_id}")
